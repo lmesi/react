@@ -1,14 +1,14 @@
-import { React, Fragment, Component } from 'react'
+import React, { Fragment, Component } from 'react'
 import {
   Dialog,
   Button,
   Fab,
-  Add,
   DialogActions,
   DialogTitle,
   DialogContent,
   DialogContentText
-} from 'material-ui'
+} from '@material-ui/core'
+import AddIcon from '@material-ui/icons/Add'
 
 export default class extends Component {
   state = {
@@ -25,8 +25,8 @@ export default class extends Component {
 
     return (
       <Fragment>
-        <Fab size="small" color="secondary" onClick={this.handleToggle}>
-          <Add />
+        <Fab color="primary" onClick={this.handleToggle} size="small">
+          <AddIcon />
         </Fab>
         <Dialog open={open} onClose={this.handleToggle}>
           <DialogTitle id="form-dialog-title">
@@ -36,6 +36,7 @@ export default class extends Component {
             <DialogContentText>
               Please fill out the form below.
             </DialogContentText>
+            <form />
           </DialogContent>
           <DialogActions>
             <Button color="primary" variant="raised">

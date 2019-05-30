@@ -6,7 +6,7 @@ import {
   List,
   ListItem,
   ListItemText
-} from 'material-ui'
+} from '@material-ui/core'
 
 const styles = {
   Paper: {

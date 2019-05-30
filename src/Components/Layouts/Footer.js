@@ -1,6 +1,5 @@
 import React from 'react'
-import { Paper, Tabs } from 'material-ui'
-import { Tab } from 'material-ui/Tabs'
+import { Paper, Tabs, Tab } from '@material-ui/core'
 
 export default ({ muscles, category, onSelect }) => {
   const index = category
